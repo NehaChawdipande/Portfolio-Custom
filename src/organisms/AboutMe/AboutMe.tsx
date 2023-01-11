@@ -3,6 +3,9 @@ import React from "react";
 const AboutMe = (): JSX.Element => {
   return (
     <div className="page2" id="page2">
+      <div className="responsiveImg2">
+        <img id="dev" src="/11.png" alt="dev" />
+      </div>
       <div className="text2">
         <h1 id="hi" style={{ color: "#ececec" }}>
           About me
@@ -11,7 +14,7 @@ const AboutMe = (): JSX.Element => {
           Software Developer
         </body>
         <h3 id="highlight" style={{ display: "inline" }}>
-          Accenture@
+          @Accenture
         </h3>
         <br />
         <br />
@@ -23,11 +26,8 @@ const AboutMe = (): JSX.Element => {
           <strong id="highlight">communication, and collaboration</strong>.
           Completed 100+ mid-sized tasks in a span of a year and half and
           <strong id="highlight"> improved </strong>team output by
-          <strong id="highlight"> 25%</strong>
+          <strong id="highlight"> 25%.</strong>
         </body>
-      </div>
-      <div className="responsiveImg2">
-        <img id="dev" src="/11.png" alt="dev" />
       </div>
     </div>
   );

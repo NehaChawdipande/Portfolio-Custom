@@ -1,6 +1,4 @@
-// import React, { useEffect, useState } from "react";
 import React from "react";
-// import ReactTypingEffect from "react-typing-effect";
 // import { motion } from "framer-motion";
 
 import "./App.css";
