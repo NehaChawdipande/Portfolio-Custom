@@ -1,23 +1,13 @@
 import React from "react";
+import { Link, Route, Routes } from "react-router-dom";
 // import { motion } from "framer-motion";
 
 import "./App.css";
-import AboutMe from "./organisms/AboutMe/AboutMe";
-import Contact from "./organisms/Contact/Contact";
-import Hello from "./organisms/Hello/Hello";
-import Skills from "./organisms/Skills/Skills";
+import Home from "./pages/Home";
+import MyJourney from "./pages/MyJourney";
+import MyProjects from "./pages/MyProjects";
 
 function App() {
-  // const [offsetY, setOffsetY] = useState(0);
-  // const [rotate, setRotate] = useState(false);
-  // const handleScroll = () => setOffsetY(window.pageYOffset);
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
-
   return (
     <div className="App">
       <div id="nav">
@@ -34,22 +24,34 @@ function App() {
           />
         </a>
         <ul id="navigation">
-          <li className="scaleOnHover">
-            <button className="textOnly">Home</button>
+          <li className="scaleOnHoverRed">
+            <div>
+              <Link className="navLink" to="/">
+                My Home
+              </Link>
+            </div>
           </li>
-          <li className="scaleOnHover">
-            <button className="textOnly">Skills</button>
+          <li className="scaleOnHoverRed">
+            <div>
+              <Link className="navLink" to="/my-projects">
+                My Projects
+              </Link>
+            </div>
           </li>
-          <li className="scaleOnHover">
-            <button className="textOnly">Contact</button>
+          <li className="scaleOnHoverRed">
+            <div>
+              <Link className="navLink" to="/my-journey">
+                My Journey
+              </Link>
+            </div>
           </li>
         </ul>
       </div>
-      <br />
-      <Hello />
-      <AboutMe />
-      <Skills />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="my-projects" element={<MyProjects />} />
+        <Route path="my-journey" element={<MyJourney />} />
+      </Routes>
 
       {/* <motion.img
         src="/me.png"
@@ -89,7 +91,7 @@ function App() {
       <footer>
         <a
           id="highlight"
-          href="https://www.freepik.com/author/stories"
+          href="https://www.storyset.com/"
           target="_blank"
           rel="noreferrer"
         >

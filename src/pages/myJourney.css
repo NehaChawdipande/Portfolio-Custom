@@ -1,0 +1,71 @@
+.journey {
+  padding: 24px 0;
+  background-color: #0d161a;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+.body {
+  background-color: #0d161a;
+}
+.background {
+  background-image: url("/public/back2.png");
+  opacity: 4%;
+  width: 100vw;
+  height: 100%;
+  background-size: contain;
+  position: absolute;
+}
+/* .foreground {
+  background-image: url("/public/step1.png");
+  width: 100%;
+  background-size: cover;
+  height:  100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.step2 {
+  background-image: url("/public/step2.png");
+  background-size: cover;
+  width: 100%;
+  height:  100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.step3 {
+  background-image: url("/public/step3.png");
+  background-size: cover;
+  width: 100%;
+  height:  100%;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.step4 {
+  background-image: url("/public/step4.png");
+  background-size: cover;
+  width: 100%;
+  height:  100%;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.step5 {
+  background-image: url("/public/step5.png");
+  background-size: cover;
+  width: 100%;
+  height:  100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.step6 {
+  background-image: url("/public/step6.png");
+  background-size: cover;
+  width: 100%;
+  height:  100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+} */

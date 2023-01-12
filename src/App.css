@@ -43,10 +43,15 @@
   scale: 1.257;
   color: #0d161a;
 }
+.scaleOnHoverRed :hover {
+  scale: 1.25;
+  color: #da314b;
+}
 .socialList button:hover {
   scale: 1.25;
   color: #621924;
 }
+
 .page2 {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -71,6 +76,7 @@ textarea {
   color: #121f24;
   font-size: large;
   font-weight: 600;
+  resize: none;
 }
 .myform input:focus,
 input:focus-visible,
@@ -163,6 +169,14 @@ textarea:focus-visible {
   color: white;
   background-color: transparent;
   border: none;
+  text-decoration: none;
+}
+.navLink {
+  color: #ececec;
+  font-family: monospace;
+  text-decoration: none;
+  font-size: large;
+  margin-right: 12px;
 }
 #background {
   object-fit: contain;
