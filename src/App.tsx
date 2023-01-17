@@ -27,7 +27,7 @@ function App() {
           <li className="scaleOnHoverRed">
             <div>
               <Link className="navLink" to="/">
-                My Home
+                Home
               </Link>
             </div>
           </li>
