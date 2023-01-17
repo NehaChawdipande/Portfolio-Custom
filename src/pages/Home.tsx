@@ -14,7 +14,7 @@ const Home = () => {
       <Contact />
       <footer>
         <a
-          id="highlight"
+          className="highlight"
           href="https://www.storyset.com/"
           target="_blank"
           rel="noreferrer"

@@ -1,3 +1,12 @@
+$primaryRed: #da5031;
+$secondaryBlueDark: #0d161a;
+$navyBlue: #17282f;
+$blue2: #121f24;
+$blue3: #1d2e35;
+$lightGray: #40565f;
+$darkRed: #621924;
+$white1: #ececec;
+
 .App {
   text-align: center;
   width: 100%;
@@ -12,7 +21,7 @@
 .wrapper {
   display: block;
   margin-top: 10%;
-  background-color: #0d161a;
+  background-color: $secondaryBlueDark;
   z-index: -1;
   padding-top: 10%;
 }
@@ -38,36 +47,35 @@
   padding: 0;
   justify-content: flex-start;
   align-items: center;
-  button:hover {
+  button :hover {
     scale: 1.25;
-    color: #621924;
+    color: $darkRed;
   }
 }
 .scaleOnHover :hover {
   scale: 1.257;
-  color: #0d161a;
+  color: $secondaryBlueDark;
 }
 .scaleOnHoverRed :hover {
   scale: 1.25;
-  color: #da314b;
+  color: $primaryRed;
 }
 // .socialList button:hover {
 //   scale: 1.25;
-//   color: #621924;
+//   color: $darkRed;
 // }
 
 .page2 {
   display: grid;
   grid-template-columns: 60% 40%;
-  background-color: #0d161a;
-  /* align-items: center; */
+  background-color: $secondaryBlueDark;
   width: 100vw;
   padding-top: 5%;
   padding-bottom: 5%;
 }
 .formInputField {
-  background-color: #ececec;
-  color: #17282f;
+  background-color: $white1;
+  color: $navyBlue;
   border-radius: 12px;
   margin: 0 12px 12px;
   height: 32px;
@@ -77,14 +85,14 @@
 .myform input,
 textarea {
   font-family: monospace;
-  color: #121f24;
+  color: $blue2;
   font-size: large;
   font-weight: 600;
   resize: none;
   &:focus,
   &:focus-visible {
     outline: none;
-    border: solid 4px #40565f;
+    border: solid 4px $lightGray;
   }
 }
 // .myform input:focus,
@@ -102,7 +110,7 @@ textarea {
   width: 100%;
   min-width: 100vw;
   justify-content: space-between;
-  background-color: #17282f;
+  background-color: $navyBlue;
   align-items: center;
 }
 #navigation {
@@ -114,55 +122,58 @@ textarea {
   align-items: center;
   text-align: center;
   justify-content: center;
-  ul {}
+  ul {
+    text-decoration: none;
+    font-family: monospace;
+  }
+  li {
+    display: inline;
+    margin: 12px;
+  }
+  button {
+    font-family: monospace;
+    color: white;
+    font-weight: 500;
+    font-size: large;
+  }
 }
-#navigation ul {
-  text-decoration: none;
-  font-family: monospace;
-}
-#navigation li {
-  display: inline;
-  margin: 12px;
-}
-#navigation button {
-  font-family: monospace;
-  color: white;
-  font-weight: 500;
-  font-size: large;
-}
+// #navigation ul {
+//   text-decoration: none;
+//   font-family: monospace;
+// }
+// #navigation li {
+//   display: inline;
+//   margin: 12px;
+// }
+// #navigation button {
+//   font-family: monospace;
+//   color: white;
+//   font-weight: 500;
+//   font-size: large;
+// }
 .textButton {
   height: fit-content;
   color: white;
-  background-color: #0d161a;
+  background-color: $secondaryBlueDark;
   padding: 12px 24px;
   border-radius: 40px;
   border: none;
 }
 .textButtonLight {
-  height: fit-content;
-  color: white;
-  background-color: #1d2e35;
-  padding: 12px 24px;
-  border-radius: 40px;
-  border: none;
+  @extend .textButton;
+  background-color: $blue3;
 }
+
 .text {
   display: block;
-  /* display: grid;
-  align-content: center; */
   text-align: left;
   padding-left: 10%;
   justify-content: center;
   font-family: monospace;
 }
 .text2 {
-  display: block;
-  /* display: grid;
-  align-content: center; */
-  text-align: left;
+  @extend .text;
   padding-left: 8%;
-  justify-content: center;
-  font-family: monospace;
 }
 .responsiveImg {
   /* display: inline-block; */
@@ -183,7 +194,7 @@ textarea {
   text-decoration: none;
 }
 .navLink {
-  color: #ececec;
+  color: $white1;
   font-family: monospace;
   text-decoration: none;
   font-size: large;
@@ -198,14 +209,14 @@ textarea {
   height: auto;
   width: 100%;
 }
-#highlight {
-  color: #da314b;
+.highlight {
+  color: $primaryRed;
   display: inline;
   font-family: monospace;
   font-weight: 600;
 }
-#subtext {
-  color: #17282f;
+.subtext {
+  color: $navyBlue;
   font-weight: 600;
   height: auto;
   width: -webkit-fill-available;
@@ -214,11 +225,15 @@ textarea {
 #hi {
   height: auto;
   width: -webkit-fill-available;
-  color: #17282f;
+  color: $navyBlue;
 }
 #knowMore {
   margin: 12px;
   font-family: monospace;
+  button:hover {
+    scale: 1.2;
+    background-color: $primaryRed;
+  }
 }
 
 #me {
@@ -232,38 +247,35 @@ textarea {
   display: flex;
   justify-content: center;
   margin: 24px 8px;
+  button {
+    width: 80%;
+    &:hover {
+      scale: 1.2;
+      background-color: $primaryRed;
+    }
+  }
 }
-.sendButton button {
-  width: 80%;
-}
-.sendButton button:hover {
-  scale: 1.2;
-  background-color: #da314b;
-}
-.knowMoreButton button:hover {
-  scale: 1.2;
-  background-color: #da314b;
+.knowMoreButton{
+  @extend .sendButton;
+  justify-content: left;
+  margin: 24px 0px;
 }
 
 .skills1 {
   display: inline-flex;
-  color: #17282f;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  color: $navyBlue;
   justify-content: space-around;
   width: 100%;
   cursor: default;
-}
-.skills1 h3:hover,
-h4:hover,
-h5:hover {
-  scale: 1.2;
-  color: #da314b;
+  :hover {
+    scale: 1.2;
+    transition: all 0.2s ease-out;
+    color: $primaryRed;
+  }
 }
 
-.contactForm {
-  display: none;
-  /* to revert display none */
-  justify-content: space-evenly;
-}
 @media screen and (min-width: 320px) {
   .page1 {
     display: block;
@@ -388,6 +400,6 @@ h5:hover {
   .socialList button:hover,
   button::after {
     scale: 2;
-    color: #621924;
+    color: $darkRed;
   }
 }

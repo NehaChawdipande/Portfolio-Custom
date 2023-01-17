@@ -1,12 +1,12 @@
-
 .card {
   perspective: 1000px;
   transform-style: preserve-3d;
+  display: grid;
   /* min-height: 10vh; */
-  width: 10rem;
+  width: 16rem;
   border-radius: 30px;
-  padding: 1rem;
-  margin: 0rem 1rem;
+  padding: 1rem 2rem;
+  margin: 1rem;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 
@@ -19,7 +19,7 @@
   justify-content: center;
 }
 .sneaker img {
-  width: 5rem;
+  width: 10rem;
   z-index: 2;
   transition: all 0.75s ease-out;
 }
@@ -74,17 +74,17 @@ button.active {
   perspective: 1000px;
   transform-style: preserve-3d;
   transition: all 0.75s ease-out;
-}
-.purchase button {
-  transition: all 0.75s ease-out;
-  font-size: 0.5rem;
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  background: #f54642;
-  border: none;
-  color: white;
-  cursor: pointer;
-  border-radius: 30px;
-  font-weight: bolder;
+  button {
+    transition: all 0.75s ease-out;
+    font-size: 0.5rem;
+    width: 80%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #f54642;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+  }
 }

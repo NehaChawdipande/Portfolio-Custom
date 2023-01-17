@@ -5,13 +5,13 @@ const Skills = (): JSX.Element => {
     <div className="page3">
       <div className="text">
         <h1 id="hi">Skills</h1>
-        <body id="subtext" style={{ display: "inline" }}>
+        <body className="subtext" style={{ display: "inline" }}>
           Here are some of the{" "}
         </body>
-        <h3 id="highlight" style={{ display: "inline" }}>
+        <h3 className="highlight" style={{ display: "inline" }}>
           frameworks, libraries, ect.
         </h3>
-        <body id="subtext" style={{ display: "inline" }}>
+        <body className="subtext" style={{ display: "inline" }}>
           {" "}
           that I have experience with:
         </body>

@@ -29,21 +29,21 @@ const Hello = (): JSX.Element => {
               ]}
             />
           </h1>
-          <body id="subtext" style={{ display: "inline" }}>
+          <body className="subtext" style={{ display: "inline" }}>
             My name is{" "}
           </body>
-          <h2 style={{ display: "inline" }} id="highlight">
+          <h2 style={{ display: "inline" }} className="highlight">
             Neha.
           </h2>
-          <body id="subtext">I am a software developer based in India.</body>
+          <body className="subtext">I am a software developer based in India.</body>
           <br />
-          <body id="subtext" style={{ display: "inline" }}>
+          <body className="subtext" style={{ display: "inline" }}>
             I specialize in building{" "}
           </body>
-          <h3 id="highlight" style={{ display: "inline" }}>
+          <h3 className="highlight" style={{ display: "inline" }}>
             seamless and unique
           </h3>
-          <body id="subtext" style={{ display: "inline" }}>
+          <body className="subtext" style={{ display: "inline" }}>
             {" "}
             web experiences carefully catered to the needs of your client.
           </body>
@@ -55,7 +55,7 @@ const Hello = (): JSX.Element => {
             </button>
           </div>
           <div className="social">
-            <h3 id="highlight" style={{ display: "block", marginBottom: "0" }}>
+            <h3 className="highlight" style={{ display: "block", marginBottom: "0" }}>
               Lets connect!
             </h3>
             <br />
@@ -69,11 +69,11 @@ const Hello = (): JSX.Element => {
                   )
                 }
               >
-                <LinkedInIcon id="highlight" />
+                <LinkedInIcon className="highlight" />
               </IconButton>
               <IconButton aria-label="mail">
                 <ContactMailIcon
-                  id="highlight"
+                  className="highlight"
                   onClick={() => {
                     const contactForm = document.getElementById("page4");
                     if (contactForm)

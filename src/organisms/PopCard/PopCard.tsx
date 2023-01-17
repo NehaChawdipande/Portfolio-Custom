@@ -2,7 +2,15 @@ import React from "react";
 import { useEffect } from "react";
 import "./popCard.scss";
 
-const PopCard = (): JSX.Element => {
+interface PopCardInterface {
+  title: string;
+  desc: string;
+  imgsrc: string;
+  buttonName: string;
+  buttonRedirectUrl?: string;
+}
+
+const PopCard = (props: PopCardInterface): JSX.Element => {
   useEffect(() => {
     const card = document.querySelectorAll(".card") as NodeListOf<HTMLElement>;
     //Items
@@ -45,29 +53,21 @@ const PopCard = (): JSX.Element => {
         purchase[i].style.transform = "translateZ(0px)";
       });
     }
-    //Moving Animation Event
-
-    //Animate In
-
-    //Animate Out
-
-    // window.addEventListener("scroll", handleScroll);
-    // return () => window.removeEventListener("mouseenter");
   }, []);
   return (
     <>
-        <div className="card">
-          <div className="sneaker">
-            <img src="step6.png" alt="adidas" />
-          </div>
-          <div className="info">
-            <h2 className="title">My Illustrations</h2>
-            <h3>A small collection of my handmade illustration art.</h3>
-            <div className="purchase">
-              <button>View</button>
-            </div>
+      <div className="card">
+        <div className="sneaker">
+          <img src={`${props.imgsrc}`} alt="cardImg" />
+        </div>
+        <div className="info">
+          <h2 className="title">{props.title}</h2>
+          <h3>{props.desc}</h3>
+          <div className="purchase">
+            <button onClick={()=>window.open(`${props?.buttonRedirectUrl}`)}>{props.buttonName}</button>
           </div>
         </div>
+      </div>
     </>
   );
 };

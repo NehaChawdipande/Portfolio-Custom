@@ -15,8 +15,21 @@ const MyJourney = () => {
     //   />
     <>
       <div className="container">
-      <PopCard />
-      <PopCard />
+        <PopCard
+          title="My NFT Collection"
+          desc="A small collection of authentic handmade illustration art by me."
+          buttonName="View"
+          imgsrc="nft.png"
+          buttonRedirectUrl="https://opensea.io/collection/untitled-collection-264563453/"
+        />
+        <PopCard
+          title="My Github"
+          desc="Visit my gitHub profile"
+          buttonName="Visit"
+          imgsrc="github.png"
+          buttonRedirectUrl="https://github.com/NehaChawdipande/"
+        />
+        {/* <PopCard /> */}
       </div>
     </>
 

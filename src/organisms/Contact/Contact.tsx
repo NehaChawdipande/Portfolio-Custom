@@ -12,18 +12,18 @@ const Contact = (): JSX.Element => {
         <h1 id="hi" style={{ color: "#ececec" }}>
           Contact Me
         </h1>
-        <body id="subtext" style={{ color: "#ececec" }}>
+        <body className="subtext" style={{ color: "#ececec" }}>
           Wanna chat?
         </body>
-        <h3 id="highlight" style={{ display: "inline" }}>
+        <h3 className="highlight" style={{ display: "inline" }}>
           Send me a Message!
         </h3>
         <br />
         <br />
-        {/* <body id="subtext">
+        {/* <body className="subtext">
           Oops! Contact form is still in progress.. Try{" "}
           <a
-            id="highlight"
+            className="highlight"
             href="https://www.linkedin.com/in/neha-chawdipande/"
             target="_blank"
             rel="noreferrer"

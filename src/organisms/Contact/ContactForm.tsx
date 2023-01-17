@@ -58,48 +58,6 @@ const ContactForm = (): JSX.Element => {
           </div>
         </div>
       </form>
-      {/* <form
-        onSubmit={handleSubmit}
-        style={{
-          backgroundColor: "#ececec",
-          padding: "12px",
-          borderRadius: "24px",
-        }}
-      >
-        <div>
-          <TextField label="Name" variant="filled" />
-          <TextField label="Email" variant="filled" />
-          <TextField
-            id="input-with-icon-textfield"
-            label="TextField"
-            variant="standard"
-            color="error"
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position="start">
-                  <PersonIcon />
-                </InputAdornment>
-              ),
-            }}
-          />
-          <ValidationError prefix="Email" field="email" errors={state.errors} />
-        </div>
-        <div className="contactForm">
-          <TextField label="Message" variant="filled" />
-          <ValidationError
-            prefix="Message"
-            field="message"
-            errors={state.errors}
-          />
-          <IconButton
-            aria-label="linkedin"
-            type="submit"
-            disabled={state.submitting}
-          >
-            <SendIcon id="highlight" />
-          </IconButton>
-        </div>
-      </form> */}
     </>
   );
 };
