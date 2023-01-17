@@ -38,6 +38,10 @@
   padding: 0;
   justify-content: flex-start;
   align-items: center;
+  button:hover {
+    scale: 1.25;
+    color: #621924;
+  }
 }
 .scaleOnHover :hover {
   scale: 1.257;
@@ -47,10 +51,10 @@
   scale: 1.25;
   color: #da314b;
 }
-.socialList button:hover {
-  scale: 1.25;
-  color: #621924;
-}
+// .socialList button:hover {
+//   scale: 1.25;
+//   color: #621924;
+// }
 
 .page2 {
   display: grid;
@@ -77,20 +81,26 @@ textarea {
   font-size: large;
   font-weight: 600;
   resize: none;
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    border: solid 4px #40565f;
+  }
 }
-.myform input:focus,
-input:focus-visible,
-textarea:focus,
-textarea:focus-visible {
-  outline: none;
-  border: solid 4px #40565f;
-}
+// .myform input:focus,
+// input:focus-visible,
+// textarea:focus,
+// textarea:focus-visible {
+//   outline: none;
+//   border: solid 4px #40565f;
+// }
 #nav {
   z-index: 2;
   position: sticky;
   top: 0;
   display: flex;
   width: 100%;
+  min-width: 100vw;
   justify-content: space-between;
   background-color: #17282f;
   align-items: center;
@@ -104,6 +114,7 @@ textarea:focus-visible {
   align-items: center;
   text-align: center;
   justify-content: center;
+  ul {}
 }
 #navigation ul {
   text-decoration: none;

@@ -12,6 +12,16 @@ const Home = () => {
       <AboutMe />
       <Skills />
       <Contact />
+      <footer>
+        <a
+          id="highlight"
+          href="https://www.storyset.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Illustrations by storyset
+        </a>
+      </footer>
     </>
   );
 };

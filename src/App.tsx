@@ -2,7 +2,7 @@ import React from "react";
 import { Link, Route, Routes } from "react-router-dom";
 // import { motion } from "framer-motion";
 
-import "./App.css";
+import "./App.scss";
 import Home from "./pages/Home";
 import MyJourney from "./pages/MyJourney";
 import MyProjects from "./pages/MyProjects";
@@ -31,17 +31,17 @@ function App() {
               </Link>
             </div>
           </li>
-          <li className="scaleOnHoverRed">
+          {/* <li className="scaleOnHoverRed">
             <div>
               <Link className="navLink" to="/my-projects">
                 My Projects
               </Link>
             </div>
-          </li>
+          </li> */}
           <li className="scaleOnHoverRed">
             <div>
-              <Link className="navLink" to="/my-journey">
-                My Journey
+              <Link className="navLink" to="/my-work">
+                My Work
               </Link>
             </div>
           </li>
@@ -50,7 +50,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="my-projects" element={<MyProjects />} />
-        <Route path="my-journey" element={<MyJourney />} />
+        <Route path="my-work" element={<MyJourney />} />
       </Routes>
 
       {/* <motion.img
@@ -88,16 +88,7 @@ function App() {
       >
         vue.js
       </motion.h2> */}
-      <footer>
-        <a
-          id="highlight"
-          href="https://www.storyset.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Illustrations by storyset
-        </a>
-      </footer>
+      
     </div>
   );
 }
