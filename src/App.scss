@@ -1,4 +1,4 @@
-$primaryRed: #da5031;
+$primaryRed: #da314b;
 $secondaryBlueDark: #0d161a;
 $navyBlue: #17282f;
 $blue2: #121f24;
@@ -258,7 +258,7 @@ textarea {
 .knowMoreButton{
   @extend .sendButton;
   justify-content: left;
-  margin: 24px 0px;
+  margin: 16px 0;
 }
 
 .skills1 {
@@ -308,8 +308,8 @@ textarea {
     display: block;
   }
   .textButton {
-    margin: 20px 0;
-    padding: 0px 8px;
+    margin: 0;
+    padding: 8px;
     font-size: 12px;
   }
   #knowMore {
@@ -351,7 +351,7 @@ textarea {
     font-size: large;
   }
   .textButton {
-    padding: 0px 12px;
+    padding: 8px 12px;
     margin: 0;
   }
   #knowMore {

@@ -62,9 +62,11 @@ const PopCard = (props: PopCardInterface): JSX.Element => {
         </div>
         <div className="info">
           <h2 className="title">{props.title}</h2>
-          <h3>{props.desc}</h3>
+          <h3 className="description">{props.desc}</h3>
           <div className="purchase">
-            <button onClick={()=>window.open(`${props?.buttonRedirectUrl}`)}>{props.buttonName}</button>
+            <button onClick={() => window.open(`${props?.buttonRedirectUrl}`)}>
+              {props.buttonName}
+            </button>
           </div>
         </div>
       </div>

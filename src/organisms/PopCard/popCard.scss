@@ -9,7 +9,12 @@
   margin: 1rem;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
-
+.buttonText {
+  color: white;
+  margin: 0;
+  font-weight: bold;
+  font-family: monospace;
+}
 .sneaker {
   perspective: 1000px;
   transform-style: preserve-3d;
