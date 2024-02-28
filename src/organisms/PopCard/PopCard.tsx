@@ -6,8 +6,9 @@ interface PopCardInterface {
   title: string;
   desc: string;
   imgsrc: string;
-  buttonName: string;
+  buttonName?: string;
   buttonRedirectUrl?: string;
+  width?: string;
 }
 
 const PopCard = (props: PopCardInterface): JSX.Element => {
@@ -30,7 +31,7 @@ const PopCard = (props: PopCardInterface): JSX.Element => {
         let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
         // @ts-ignore
         let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
-        card[i].style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+        card[i].style.transform = `rotateY(${0}deg) rotateX(${0}deg)`;
       });
 
       card[i].addEventListener("mouseenter", (e) => {
@@ -55,22 +56,20 @@ const PopCard = (props: PopCardInterface): JSX.Element => {
     }
   }, []);
   return (
-    <>
       <div className="card">
         <div className="sneaker">
-          <img src={`${props.imgsrc}`} alt="cardImg" />
+          <img src={`${props.imgsrc}`} alt="cardImg" style={{width:props.width}}/>
         </div>
         <div className="info">
           <h2 className="title">{props.title}</h2>
           <h3 className="description">{props.desc}</h3>
-          <div className="purchase">
+         {props.buttonName?<div className="purchase" >
             <button onClick={() => window.open(`${props?.buttonRedirectUrl}`)}>
               {props.buttonName}
             </button>
-          </div>
+          </div>: <></> } 
         </div>
       </div>
-    </>
   );
 };
 export default PopCard;

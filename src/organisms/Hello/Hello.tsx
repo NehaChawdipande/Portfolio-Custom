@@ -3,6 +3,7 @@ import IconButton from "@mui/material/IconButton";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import ReactTypingEffect from "react-typing-effect";
+import * as constants from "./Home.constants.js";
 
 const Hello = (): JSX.Element => {
   const knowMore = () => {
@@ -10,7 +11,6 @@ const Hello = (): JSX.Element => {
     if (about) about.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <>
       <div className="page1">
         <div className="text">
           <h1 id="hi">
@@ -29,24 +29,24 @@ const Hello = (): JSX.Element => {
               ]}
             />
           </h1>
-          <body className="subtext" style={{ display: "inline" }}>
+          <h5 className="subtext" style={{ display: "inline" }}>
             My name is{" "}
-          </body>
-          <h2 style={{ display: "inline" }} className="highlight">
-            Neha.
-          </h2>
-          <body className="subtext">I am a software developer based in India.</body>
-          <br />
-          <body className="subtext" style={{ display: "inline" }}>
-            I specialize in building{" "}
-          </body>
-          <h3 className="highlight" style={{ display: "inline" }}>
-            seamless and unique
+          </h5>
+          <h3 className="highlight" style={{ display: "inline" }} >
+            Neha Chawdipande.
           </h3>
-          <body className="subtext" style={{ display: "inline" }}>
+          <h5 className="subtext">I am a software developer based in India.</h5>
+          <br />
+          <h5 className="subtext" style={{ display: "inline" }}>
+            I specialize in building{" "}
+          </h5>
+          <h5 className="highlight" style={{ display: "inline" }}>
+            seamless and unique
+          </h5>
+          <h5 className="subtext" style={{ display: "inline" }}>
             {" "}
             web experiences carefully catered to the needs of your client.
-          </body>
+          </h5>
           <br />
           <br />
           <div className="knowMoreButton">
@@ -55,8 +55,8 @@ const Hello = (): JSX.Element => {
             </button>
           </div>
           <div className="social">
-            <h3 className="highlight" style={{ display: "block", marginBottom: "0" }}>
-              Lets connect!
+            <h3 className="subtext" style={{ display: "block", marginBottom: "0" }}>
+              Let's connect!
             </h3>
             <br />
             <div className="socialList">
@@ -87,8 +87,8 @@ const Hello = (): JSX.Element => {
         <div className="responsiveImg">
           <img id="dev" src="/14.png" alt="dev" />
         </div>
+        
       </div>
-    </>
   );
 };
 export default Hello;

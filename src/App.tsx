@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Route, Routes } from "react-router-dom";
 // import { motion } from "framer-motion";
+import Contact from "./organisms/Contact/Contact";
 
 import "./App.scss";
 import Home from "./pages/Home";
@@ -45,12 +46,20 @@ function App() {
               </Link>
             </div>
           </li>
+          <li className="scaleOnHoverRed">
+            <div>
+              <Link className="navLink" to="/contact">
+                Contact
+              </Link>
+            </div>
+          </li>
         </ul>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="my-projects" element={<MyProjects />} />
         <Route path="my-work" element={<MyJourney />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
 
       {/* <motion.img

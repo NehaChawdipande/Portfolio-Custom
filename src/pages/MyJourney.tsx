@@ -13,26 +13,62 @@ const MyJourney = () => {
     //       transform: `translateY(${offsetY * -0.5}px)`,
     //     }}
     //   />
-    <>
+    <><div>
+      <h4 id="hi" className="highlight" style={{ color: "#C9A730", marginBottom: "12px"}}>
+          Projects, Designs and More..
+        </h4>
+    </div>
       <div className="container">
+        <PopCard
+          title="Little Lemon"
+          desc="Restraunt reservation website developed as part of 'Meta Frontend Developer' Professional certification"
+          buttonName="Checkout"
+          imgsrc="proj1.png"
+          buttonRedirectUrl="https://github.com/NehaChawdipande/LittleLemon"
+          width="90%"
+        />
+        <PopCard
+        title="NewsUp"
+        desc="Angular-Ionic News Application with newsApi, weatherApi.,"
+        buttonName="Checkout"
+        imgsrc="proj2.png"
+        buttonRedirectUrl="https://github.com/NehaChawdipande/NewsUp"
+      />
+        <PopCard
+        title="Floral GiftShop"
+        desc="A React-Redux project: Floral Affairs is gifting website for quality flowers and plants to its customers.,"
+        buttonName="Checkout"
+        imgsrc="proj3.png"
+        buttonRedirectUrl="https://github.com/NehaChawdipande/Floral_GiftShop"
+        width="90%"
+      />
+
+    <PopCard
+        title="Github User search"
+        desc="Simple React project to search and fetch github users using Github API."
+        buttonName="Checkout"
+        imgsrc="proj5.png"
+        buttonRedirectUrl="https://github.com/NehaChawdipande/GithubAPI"
+        width="90%"
+      />
         <PopCard
           title="My NFT Collection"
           desc="A small collection of authentic handmade illustration art by me."
           buttonName="View"
-          imgsrc="nft.png"
+          imgsrc="nft1.png"
           buttonRedirectUrl="https://opensea.io/collection/untitled-collection-264563453/"
         />
-        <PopCard
-          title="My Github"
-          desc="Visit my gitHub profile"
+     <PopCard
+          title="My Medium Blog"
+          desc="Blog with interesting articles, authored by me."
           buttonName="Visit"
-          imgsrc="github.png"
-          buttonRedirectUrl="https://github.com/NehaChawdipande/"
+          imgsrc="blog.png"
+          width= "84%"
+          buttonRedirectUrl="https://medium.com/@nehachawdipande10"
         />
-        {/* <PopCard /> */}
+    
       </div>
-    </>
-
+</>
     // <div className="journey">
     //   <div
     //     className="background"

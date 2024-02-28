@@ -4,24 +4,22 @@ const ContactForm = (): JSX.Element => {
   const [state, handleSubmit] = useForm("xayzykkr"); //my formspree form endpoint
   if (state.succeeded) {
     return (
-      <>
-        <h3 style={{ display: "inline", color: "#ececec" }}>
+        <h3 style={{ display: "inline", color: "#527a74" }}>
           Your message has been sent!
           <br />
           Will get back to you{" "}
-          <strong style={{ color: "#da314b" }}>A.S.A.P</strong>!
+          <strong style={{ color: "#C9A730" }}>A.S.A.P</strong>!
         </h3>
-      </>
     );
   }
   return (
-    <>
+
       <form onSubmit={handleSubmit}>
         <div className="myform" style={{ display: "grid" }}>
           <label
             htmlFor="email"
             className="subtext"
-            style={{ color: "#ececec", margin: "8px 12px", fontWeight: "600" }}
+            style={{ color: "#ececec", margin: "8px 12px", fontWeight: "100" }}
           >
             Your email
           </label>
@@ -37,7 +35,7 @@ const ContactForm = (): JSX.Element => {
           <label
             htmlFor="message"
             className="subtext"
-            style={{ color: "#ececec", margin: "8px 12px", fontWeight: "600" }}
+            style={{ color: "#ececec", margin: "8px 12px", fontWeight: "100" }}
           >
             Your message
           </label>
@@ -58,7 +56,6 @@ const ContactForm = (): JSX.Element => {
           </div>
         </div>
       </form>
-    </>
   );
 };
 export default ContactForm;

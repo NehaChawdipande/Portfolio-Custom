@@ -4,17 +4,10 @@ const Skills = (): JSX.Element => {
   return (
     <div className="page3">
       <div className="text">
-        <h1 id="hi">Skills</h1>
-        <body className="subtext" style={{ display: "inline" }}>
-          Here are some of the{" "}
-        </body>
+        <h1 id="hi" style={{ marginBottom: "12px"}}>Expertise</h1>
         <h3 className="highlight" style={{ display: "inline" }}>
-          frameworks, libraries, ect.
+          Frameworks, libraries, ect.
         </h3>
-        <body className="subtext" style={{ display: "inline" }}>
-          {" "}
-          that I have experience with:
-        </body>
         <br />
         <br />
         <div className="skills1">
@@ -28,18 +21,23 @@ const Skills = (): JSX.Element => {
           <h4>Sass/scss</h4>
         </div>
         <div className="skills1">
-          <h3>Nuxt.js</h3>
+          <h3>Angular.js</h3>
           <h5 style={{ margin: 0 }}>SLDS</h5>
           <h4>CSS</h4>
         </div>
         <div className="skills1">
           <h5>Jest & RTL</h5>
           <h3 style={{ margin: 0 }}>Bootstrap</h3>
-          <h4>MUI</h4>
+          <h4>Redux</h4>
+        </div>
+        <div className="skills1">
+          <h5>Karma</h5>
+          <h3 style={{ margin: 0 }}>Ionic</h3>
+          <h4>Capacitor & Cordova</h4>
         </div>
       </div>
       <div className="responsiveImg2">
-        <img id="dev" src="/12.png" alt="dev" />
+        <img id="dev" src="/11.png" alt="dev" />
       </div>
     </div>
   );

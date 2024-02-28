@@ -79,8 +79,10 @@
 
 
 .container {
+  background: rgb(4,16,15);
+  background: linear-gradient(178deg, rgba(4,16,15,1) 35%, rgba(11,38,36,1) 84%);
   width: 100%;
-  padding: 2rem 0;
+  padding: 0;
   display: flex;
   flex-flow: wrap;
   flex: 0 1 auto;

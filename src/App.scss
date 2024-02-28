@@ -1,27 +1,39 @@
-$primaryRed: #da314b;
+
 $secondaryBlueDark: #0d161a;
-$navyBlue: #17282f;
 $blue2: #121f24;
 $blue3: #1d2e35;
 $lightGray: #40565f;
 $darkRed: #621924;
 $white1: #ececec;
 
+$semi-dark-green: #0E2B27;
+$dark-green: #0B2624;
+$eggshell: #F7F4E1ff;
+$brunswick-green: #186156;
+$other-green: #335149;
+$darker-green: #09211F;
+$gold-metallic: #C9A730;
+
+$gold: #ffbb1a;
+
+
 .App {
   text-align: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 .page1 {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 55% 45%;
   /* align-items: center; */
   width: 100vw;
+  background: rgb(4,16,15);
+  background: linear-gradient(172deg, rgba(4,16,15,1) 35%, rgba(11,38,36,1) 84%);
 }
 .wrapper {
   display: block;
   margin-top: 10%;
-  background-color: $secondaryBlueDark;
+  // background-color: $secondaryBlueDark;
   z-index: -1;
   padding-top: 10%;
 }
@@ -29,15 +41,18 @@ $white1: #ececec;
 .page3 {
   padding-top: 0;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 50% 50%;
   flex-direction: column-reverse;
-
+  background: rgb(4, 16, 15);
+  background: linear-gradient(172deg, rgb(4, 16, 15) 35%, rgb(11, 38, 36) 84%);
   width: 100vw;
   padding-bottom: 10%;
 }
 .social {
   margin-left: 8px;
-  display: inline-block;
+  display: block;
+  font-style: italic;
+  float: left;
 }
 .socialList {
   display: flex;
@@ -49,7 +64,7 @@ $white1: #ececec;
   align-items: center;
   button :hover {
     scale: 1.25;
-    color: $darkRed;
+    color: $dark-green;
   }
 }
 .scaleOnHover :hover {
@@ -58,24 +73,25 @@ $white1: #ececec;
 }
 .scaleOnHoverRed :hover {
   scale: 1.25;
-  color: $primaryRed;
+  color: $gold-metallic;
 }
 // .socialList button:hover {
 //   scale: 1.25;
-//   color: $darkRed;
+//   color: $dark-green;
 // }
 
 .page2 {
   display: grid;
-  grid-template-columns: 60% 40%;
-  background-color: $secondaryBlueDark;
+  grid-template-columns: 50% 50%;
   width: 100vw;
-  padding-top: 5%;
+  padding-top: 1%;
   padding-bottom: 5%;
+  background: rgb(4,16,15);
+  background: linear-gradient(356deg, rgba(4,16,15,1) 35%, rgba(11,38,36,1) 84%);
 }
 .formInputField {
   background-color: $white1;
-  color: $navyBlue;
+  color: $dark-green;
   border-radius: 12px;
   margin: 0 12px 12px;
   height: 32px;
@@ -84,10 +100,10 @@ $white1: #ececec;
 
 .myform input,
 textarea {
-  font-family: monospace;
+  font-family: "Playfair Display", serif;
   color: $blue2;
-  font-size: large;
-  font-weight: 600;
+  font-size: medium;
+  font-weight: 100;
   resize: none;
   &:focus,
   &:focus-visible {
@@ -107,10 +123,10 @@ textarea {
   position: sticky;
   top: 0;
   display: flex;
+  background: rgb(4, 16, 15);
   width: 100%;
   min-width: 100vw;
   justify-content: space-between;
-  background-color: $navyBlue;
   align-items: center;
 }
 #navigation {
@@ -121,40 +137,28 @@ textarea {
   height: 56px;
   align-items: center;
   text-align: center;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-right: 5%;
   ul {
     text-decoration: none;
-    font-family: monospace;
+    font-family: "Playfair Display", serif;
   }
   li {
     display: inline;
     margin: 12px;
   }
   button {
-    font-family: monospace;
+    font-family: "Playfair Display", serif;
     color: white;
     font-weight: 500;
     font-size: large;
   }
 }
-// #navigation ul {
-//   text-decoration: none;
-//   font-family: monospace;
-// }
-// #navigation li {
-//   display: inline;
-//   margin: 12px;
-// }
-// #navigation button {
-//   font-family: monospace;
-//   color: white;
-//   font-weight: 500;
-//   font-size: large;
-// }
+
 .textButton {
   height: fit-content;
   color: white;
-  background-color: $secondaryBlueDark;
+  background-color:$other-green;
   padding: 12px 24px;
   border-radius: 40px;
   border: none;
@@ -166,19 +170,23 @@ textarea {
 
 .text {
   display: block;
-  text-align: left;
+  text-align: center;
   padding-left: 10%;
+ 
   justify-content: center;
-  font-family: monospace;
+  font-family: "Playfair Display", serif;
+  h1, h2, h3, h4, h5{ font-weight: 100;}
 }
 .text2 {
   @extend .text;
   padding-left: 8%;
+  align-self: center;
 }
 .responsiveImg {
   /* display: inline-block; */
   align-content: center;
-  margin: 20px;
+  align-self: center;
+  margin: 0;
   margin-top: 0;
 }
 .responsiveImg2 {
@@ -195,7 +203,7 @@ textarea {
 }
 .navLink {
   color: $white1;
-  font-family: monospace;
+  font-family: "Playfair Display", serif;
   text-decoration: none;
   font-size: large;
   margin-right: 12px;
@@ -210,29 +218,43 @@ textarea {
   width: 100%;
 }
 .highlight {
-  color: $primaryRed;
+  color: $gold;
   display: inline;
-  font-family: monospace;
-  font-weight: 600;
+  font-size: large;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.4px;
+  font-weight: 400;
 }
 .subtext {
-  color: $navyBlue;
-  font-weight: 600;
+  font-size: large;
+  margin: 12px 0;
+  color: ghostwhite;
   height: auto;
+  font-weight: 100;
+  letter-spacing: 0.4px;
   width: -webkit-fill-available;
 }
 
 #hi {
   height: auto;
   width: -webkit-fill-available;
-  color: $navyBlue;
+  color:ghostwhite;
+  text-align: center;
+  margin-top: -20px;
+  /* margin-left: -40px; */
+  z-index: 0;
+  position: relative;
+  font-size: 4rem;
+  margin-bottom: 3rem;
 }
 #knowMore {
   margin: 12px;
-  font-family: monospace;
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+  font-size: medium;
   button:hover {
     scale: 1.2;
-    background-color: $primaryRed;
+    background-color: $gold-metallic;
   }
 }
 
@@ -251,7 +273,7 @@ textarea {
     width: 80%;
     &:hover {
       scale: 1.2;
-      background-color: $primaryRed;
+      background-color: $gold-metallic;
     }
   }
 }
@@ -265,14 +287,14 @@ textarea {
   display: inline-flex;
   perspective: 1000px;
   transform-style: preserve-3d;
-  color: $navyBlue;
+  color: $brunswick-green;
   justify-content: space-around;
   width: 100%;
   cursor: default;
   :hover {
     scale: 1.2;
-    transition: all 0.2s ease-out;
-    color: $primaryRed;
+    transition: all 0.5s ease-out;
+    color: $gold;
   }
 }
 
@@ -281,10 +303,10 @@ textarea {
     display: block;
   }
   .responsiveImg {
-    margin: 0 8px 20px;
+    margin: 0;
   }
   .responsiveImg2 {
-    margin-top: 10%;
+    // margin-top: 10%;
   }
   .text {
     padding-left: 8%;
@@ -295,7 +317,8 @@ textarea {
     margin-right: 12px;
   }
   #navigation {
-    justify-content: right;
+    justify-content: flex-end;
+  margin-right: 5%;
   }
   #navigation button {
     font-size: medium;
@@ -312,6 +335,10 @@ textarea {
     padding: 8px;
     font-size: 12px;
   }
+  .myFooter{
+    background-color: black;
+    padding-bottom: 20px;
+  }
   #knowMore {
     padding: 0;
   }
@@ -323,9 +350,9 @@ textarea {
     left: 5%;
     top: 20%;
   }
-  #hi {
-    font-size: 40px;
-  }
+  // #hi {
+  //   font-size: 40px;
+  // }
   .page1 {
     display: grid;
   }
@@ -345,7 +372,8 @@ textarea {
     font-size: 14px;
   }
   #navigation {
-    justify-content: center;
+    justify-content: flex-end;
+    margin-right: 5%;
   }
   #navigation button {
     font-size: large;
@@ -368,9 +396,9 @@ textarea {
   }
 }
 @media screen and (min-width: 1024px) {
-  #hi {
-    font-size: 60px;
-  }
+  // #hi {
+  //   font-size: 60px;
+  // }
   #me {
     width: 40%;
     height: 60%;
@@ -400,6 +428,6 @@ textarea {
   .socialList button:hover,
   button::after {
     scale: 2;
-    color: $darkRed;
+    color: $dark-green;
   }
 }

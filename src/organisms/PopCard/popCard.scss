@@ -1,19 +1,19 @@
+$brunswick-green: #186156ff;
 .card {
   perspective: 1000px;
   transform-style: preserve-3d;
   display: grid;
   /* min-height: 10vh; */
-  width: 16rem;
+  width: 40%;
   border-radius: 30px;
-  padding: 1rem 2rem;
   margin: 1rem;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 .buttonText {
   color: white;
   margin: 0;
   font-weight: bold;
-  font-family: monospace;
+  font-family: "Playfair Display", serif;
 }
 .sneaker {
   perspective: 1000px;
@@ -24,7 +24,7 @@
   justify-content: center;
 }
 .sneaker img {
-  width: 10rem;
+  width: 50%;
   z-index: 2;
   transition: all 0.75s ease-out;
 }
@@ -44,15 +44,19 @@
   -webkit-perspective: 1000px;
   transform-style: preserve-3d;
   perspective: 1000px;
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
 }
 .info h2 {
-  font-size: 0.9rem;
+  margin-top: 24px;
+  font-size: medium;
+  color:ghostwhite;
   transition: all 0.75s ease-out;
 }
 .info h3 {
-  font-size: 0.7rem;
+  font-size: small;
   padding: 0.1rem 0rem;
-  color: #585858;
+  color: ghostwhite;
   font-weight: lighter;
   transition: all 0.75s ease-out;
 }
@@ -81,15 +85,16 @@ button.active {
   transition: all 0.75s ease-out;
   button {
     transition: all 0.75s ease-out;
-    font-size: 0.5rem;
+    font-size: medium;
     width: 80%;
     margin-bottom: 1rem;
     padding: 1rem;
-    background: #f54642;
+    background: #5c584b;
     border: none;
     color: white;
     cursor: pointer;
+    font-family: "Playfair Display", serif;
     border-radius: 30px;
-    font-weight: bolder;
+    font-weight: 100;
   }
 }
