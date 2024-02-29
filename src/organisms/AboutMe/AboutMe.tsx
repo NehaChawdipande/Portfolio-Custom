@@ -6,25 +6,22 @@ const AboutMe = (): JSX.Element => {
       <div className="responsiveImg2">
         <img id="dev" src="/12.png" alt="dev" />
       </div>
-      <div className="text2">
-        <h1 id="hi" style={{ color: "#ececec" }}>
+      <div className="text2" >
+        <h1 id="hi" style={{ color: "#ececec" , marginBottom: "0"}} >
           About me
         </h1>
-        <h5 className="subtext" style={{ color: "#ececec" }}>
+        <h5 className="subtext" style={{ color: "#ececec" , marginBottom: "0"}}>
          Custom Software Developer Analyst
         </h5>
         <h3 className="highlight" style={{ display: "inline" }}>
           @Accenture Solutions Pvt. Ltd.
         </h3>
         <br />
-        <br />
-        <h5 className="subtext" style={{ color: "#ececec" }}>
-          Solution-oriented and problem solver with{" "}
-          <strong className="highlight">2.5+ years</strong> of professional experience{" "}
-          <strong className="highlight"> building and maintaining</strong> web
-          applications, components and features. Highly skilled in{" "}
-          <strong className="highlight">communication, and collaboration</strong>.
-          Completed 100+ mid-sized tasks in a span of a year and half and <strong className="highlight"> improved </strong>team output by <strong className="highlight"> 25%.</strong>
+       <h5 className="subtext" style={{ color: "#ececec", fontWeight: "100", fontSize:"14px"}}>
+        I'm a passionate software developer with <strong className="highlight"> over 2.5 years </strong> of experience building apps, components and features that work across different devices (web, mobile, and hybrid). With strong skills in <strong className="highlight">JavaScript</strong>  and have solid understanding of frameworks and libraries like <strong className="highlight"> React.js, Angular, and Vue.js; </strong> I have a strong personal brand known for  <strong className="highlight">  high quality </strong> and for creating smooth-running and user-friendly experiences along with writing clean code and making sure the app adapts to different screens.
+        </h5>
+        <h5 className="subtext" style={{ color: "#ececec", fontWeight: "100", fontSize:"14px"}}>
+        I love working with all kinds of teams and can explain technical stuff in a way everyone can understand. I'm also a problem solver and always on the lookout for new and cool things in web development.
         </h5>
       </div>
     </div>

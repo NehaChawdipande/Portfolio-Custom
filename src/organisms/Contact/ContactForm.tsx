@@ -47,7 +47,6 @@ const ContactForm = (): JSX.Element => {
           />
           <div className="sendButton">
             <button
-              className="textButtonLight"
               type="submit"
               disabled={state.submitting}
             >

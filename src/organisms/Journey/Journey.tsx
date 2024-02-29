@@ -5,8 +5,11 @@ import "./Journey.scss";
 
 const Journey = (): JSX.Element => {
   return (
-    <div className="page2"    style={{ gridTemplateColumns: "55% 45%"}}>
-      <div className="text" >
+    <div className="page2" style={{ gridTemplateColumns: "45% 55%"}}>
+       <div className="responsiveImg2">
+        <img id="dev" src="/journey.png" alt="dev" />
+      </div>
+      <div className="text" style={{paddingLeft:"0", paddingRight: "10%"}} >
         <h1 id="hi" style={{ marginBottom: "0"}}>Journey</h1>
         <h3 style={{ marginTop: "0"}}>Still a long way to go..</h3>
         <div className="markerLeft">
@@ -39,9 +42,6 @@ const Journey = (): JSX.Element => {
               </IconButton>
               <h4>Intern @TechMahindra| March 2021 - May 2021</h4>
         </div>
-      </div>
-      <div className="responsiveImg2">
-        <img id="dev" src="/Journey.png" alt="dev" />
       </div>
     </div>
   );

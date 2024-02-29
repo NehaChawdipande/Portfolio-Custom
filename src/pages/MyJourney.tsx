@@ -218,7 +218,7 @@ const MyJourney = () => {
     //         <br />
     //         <br />
     //         check some out{" "}
-    //         <strong id="highlight" className="scaleOnHoverRed">
+    //         <strong id="highlight" className="scaleOnHoverGold">
     //           here
     //         </strong>
     //         !
@@ -278,7 +278,7 @@ const MyJourney = () => {
     //         online experiences ..
     //         <br />
     //         <br />
-    //         <strong id="highlight" className="scaleOnHoverRed">
+    //         <strong id="highlight" className="scaleOnHoverGold">
     //           {" "}
     //           Like this one!
     //         </strong>
@@ -312,7 +312,7 @@ const MyJourney = () => {
     //         <br />
     //         <br />
     //         But I am
-    //         <strong id="highlight" className="scaleOnHoverRed">
+    //         <strong id="highlight" className="scaleOnHoverGold">
     //           {" "}
     //           excited to explore
     //         </strong>

@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm";
 const Contact = (): JSX.Element => {
   return (
 
-    <div className="page3" id="page4">
+    <div className="page3" id="page4" style={{gridTemplateColumns: "45% 55%"}}>
          
       <div className="responsiveImg2" style={{margin: "0 18px"}}>
       <h1 id="hi" className="highlight" style={{ color: "#C9A730", marginBottom: "12px"}}>

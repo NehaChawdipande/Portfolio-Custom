@@ -25,28 +25,28 @@ function App() {
           />
         </a>
         <ul id="navigation">
-          <li className="scaleOnHoverRed">
+          <li className="scaleOnHoverGold">
             <div>
               <Link className="navLink" to="/">
                 Home
               </Link>
             </div>
           </li>
-          {/* <li className="scaleOnHoverRed">
+          {/* <li className="scaleOnHoverGold">
             <div>
               <Link className="navLink" to="/my-projects">
                 My Projects
               </Link>
             </div>
           </li> */}
-          <li className="scaleOnHoverRed">
+          <li className="scaleOnHoverGold">
             <div>
               <Link className="navLink" to="/my-work">
                 My Work
               </Link>
             </div>
           </li>
-          <li className="scaleOnHoverRed">
+          <li className="scaleOnHoverGold">
             <div>
               <Link className="navLink" to="/contact">
                 Contact

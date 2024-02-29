@@ -14,7 +14,6 @@ const Home = () => {
        <Journey/>
       <footer className="myFooter">
         <a
-          className="highlight"
           href="https://www.storyset.com/"
           target="_blank"
           rel="noreferrer"

@@ -25,7 +25,7 @@ $gold: #ffbb1a;
 .page1 {
   display: grid;
   grid-template-columns: 55% 45%;
-  /* align-items: center; */
+  padding-bottom: 4%;
   width: 100vw;
   background: rgb(4,16,15);
   background: linear-gradient(172deg, rgba(4,16,15,1) 35%, rgba(11,38,36,1) 84%);
@@ -46,7 +46,7 @@ $gold: #ffbb1a;
   background: rgb(4, 16, 15);
   background: linear-gradient(172deg, rgb(4, 16, 15) 35%, rgb(11, 38, 36) 84%);
   width: 100vw;
-  padding-bottom: 10%;
+  padding-bottom: 4%;
 }
 .social {
   margin-left: 8px;
@@ -64,16 +64,18 @@ $gold: #ffbb1a;
   align-items: center;
   button :hover {
     scale: 1.25;
-    color: $dark-green;
+    color: #186156;
   }
 }
 .scaleOnHover :hover {
   scale: 1.257;
   color: $secondaryBlueDark;
+  transition: 0.5s ease-out;
 }
-.scaleOnHoverRed :hover {
+.scaleOnHoverGold :hover {
   scale: 1.25;
   color: $gold-metallic;
+  transition: 0.5s ease-out;
 }
 // .socialList button:hover {
 //   scale: 1.25;
@@ -84,8 +86,7 @@ $gold: #ffbb1a;
   display: grid;
   grid-template-columns: 50% 50%;
   width: 100vw;
-  padding-top: 1%;
-  padding-bottom: 5%;
+  padding-bottom: 4%;
   background: rgb(4,16,15);
   background: linear-gradient(356deg, rgba(4,16,15,1) 35%, rgba(11,38,36,1) 84%);
 }
@@ -271,6 +272,9 @@ textarea {
   margin: 24px 8px;
   button {
     width: 80%;
+    transition: 0.5s ease-out;
+    @extend .textButton;
+    background-color: #5c584b;
     &:hover {
       scale: 1.2;
       background-color: $gold-metallic;
@@ -287,7 +291,7 @@ textarea {
   display: inline-flex;
   perspective: 1000px;
   transform-style: preserve-3d;
-  color: $brunswick-green;
+  color: #7a887b;
   justify-content: space-around;
   width: 100%;
   cursor: default;
@@ -338,6 +342,9 @@ textarea {
   .myFooter{
     background-color: black;
     padding-bottom: 20px;
+    a {
+      color: #87887a;
+    }
   }
   #knowMore {
     padding: 0;
@@ -422,12 +429,13 @@ textarea {
     padding: 0;
   }
   .socialList button {
-    scale: 1.5;
+    scale: 2;
     margin-right: 20px;
   }
   .socialList button:hover,
   button::after {
     scale: 2;
     color: $dark-green;
+    transition: 0.5s ease-out;
   }
 }

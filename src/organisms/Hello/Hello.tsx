@@ -75,9 +75,7 @@ const Hello = (): JSX.Element => {
                 <ContactMailIcon
                   className="highlight"
                   onClick={() => {
-                    const contactForm = document.getElementById("page4");
-                    if (contactForm)
-                    contactForm.scrollIntoView({ behavior: "smooth" });
+                    window.location.replace("/contact");
                   }}
                 />
               </IconButton>
