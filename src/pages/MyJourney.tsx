@@ -15,7 +15,7 @@ const MyJourney = () => {
     //   />
     <><div>
       <h4 id="hi" className="highlight" style={{ color: "#C9A730", marginBottom: "12px"}}>
-          Projects, Designs and More..
+          Projects, Designs, Games and More..
         </h4>
     </div>
       <div className="container">
@@ -49,6 +49,22 @@ const MyJourney = () => {
         buttonName="Checkout"
         imgsrc="proj5.png"
         buttonRedirectUrl="https://github.com/NehaChawdipande/GithubAPI"
+        width="90%"
+      />
+      <PopCard
+        title="Journey"
+        desc="An endless Journey into the Seas - developed with Unity and C#"
+        buttonName="Play online"
+        imgsrc="game1.png"
+        buttonRedirectUrl="https://neyha.itch.io/journey"
+        width="90%"
+      />
+       <PopCard
+        title="Chaos"
+        desc="A casual game with groovy music and killer cubes - developed with Unity and C#"
+        buttonName="Play online"
+        imgsrc="game2.png"
+        buttonRedirectUrl="https://neyha.itch.io/chaos"
         width="90%"
       />
         <PopCard
