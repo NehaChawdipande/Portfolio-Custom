@@ -25,7 +25,7 @@ $gold: #ffbb1a;
 .page1 {
   display: grid;
   grid-template-columns: 55% 45%;
-  padding-bottom: 4%;
+   padding-bottom: 2%;
   width: 100vw;
   background: rgb(4,16,15);
   background: linear-gradient(172deg, rgba(4,16,15,1) 35%, rgba(11,38,36,1) 84%);
@@ -46,7 +46,7 @@ $gold: #ffbb1a;
   background: rgb(4, 16, 15);
   background: linear-gradient(172deg, rgb(4, 16, 15) 35%, rgb(11, 38, 36) 84%);
   width: 100vw;
-  padding-bottom: 4%;
+   padding-bottom: 2%;
 }
 .social {
   margin-left: 8px;
@@ -86,7 +86,7 @@ $gold: #ffbb1a;
   display: grid;
   grid-template-columns: 50% 50%;
   width: 100vw;
-  padding-bottom: 4%;
+   padding-bottom: 2%;
   background: rgb(4,16,15);
   background: linear-gradient(356deg, rgba(4,16,15,1) 35%, rgba(11,38,36,1) 84%);
 }
@@ -313,7 +313,7 @@ textarea {
     // margin-top: 10%;
   }
   .text {
-    padding-left: 8%;
+    padding-left: 12px;
     padding-right: 12px;
   }
   .text2 {
