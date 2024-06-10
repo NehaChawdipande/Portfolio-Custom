@@ -11,13 +11,21 @@ const Hello = (): JSX.Element => {
     if (about) about.scrollIntoView({ behavior: "smooth" });
   };
   return (
+    <>
+    <div className="name">
+    <h2>NEHA CHAWDIPANDE</h2>
+    <div style={{color: "grey"}}>Web developer</div>
+    </div>
       <div className="page1">
+                <div className="responsiveImg">
+          <img id="dev" src="/14.png" alt="dev" />
+        </div>
         <div className="text">
           <h1 id="hi">
             <ReactTypingEffect
-              speed={50}
-              eraseSpeed={50}
-              eraseDelay={1000}
+              speed={150}
+              eraseSpeed={70}
+              eraseDelay={3000}
               typingDelay={1000}
               text={[
                 "Hello!",
@@ -29,39 +37,23 @@ const Hello = (): JSX.Element => {
               ]}
             />
           </h1>
-          <h5 className="subtext" style={{ display: "inline" }}>
-            My name is{" "}
-          </h5>
-          <h3 className="highlight" style={{ display: "inline" }} >
-            Neha Chawdipande.
-          </h3>
-          <h5 className="subtext">I am a software developer based in India.</h5>
-          <br />
-          <h5 className="subtext" style={{ display: "inline" }}>
-            I specialize in building{" "}
-          </h5>
-          <h5 className="highlight" style={{ display: "inline" }}>
-            seamless and unique
-          </h5>
-          <h5 className="subtext" style={{ display: "inline" }}>
-            {" "}
-            web experiences carefully catered to the needs of your client.
-          </h5>
-          <br />
-          <br />
-          <div className="knowMoreButton">
+          <h2  >
+          Hey there! I’m Neha, A creative Graphic, Ui and web developer based in India.
+          </h2>
+         <br/>
+          {/* <div className="knowMoreButton">
             <button className="textButton" onClick={knowMore}>
               <h3 id="knowMore">Want to know more?</h3>
             </button>
-          </div>
+          </div> */}
           <div className="social">
-            <h3 className="subtext" style={{ display: "block", marginBottom: "0" }}>
+            {/* <h3 className="subtext" style={{ display: "block", marginBottom: "0" }}>
               Let's connect!
-            </h3>
-            <br />
+            </h3> */}
             <div className="socialList">
               <IconButton
-                aria-label="linkedin"
+              size="large"
+                aria-label="linkedin"  className="socialButtons"
                 onClick={() =>
                   window.open(
                     "https://www.linkedin.com/in/neha-chawdipande/",
@@ -69,11 +61,10 @@ const Hello = (): JSX.Element => {
                   )
                 }
               >
-                <LinkedInIcon className="highlight" />
+                <LinkedInIcon  className="socialButtons" />
               </IconButton>
-              <IconButton aria-label="mail">
-                <ContactMailIcon
-                  className="highlight"
+              <IconButton aria-label="mail" className="socialButtons" size="large">
+                <ContactMailIcon   className="socialButtons"
                   onClick={() => {
                     window.location.replace("/contact");
                   }}
@@ -81,12 +72,10 @@ const Hello = (): JSX.Element => {
               </IconButton>
             </div>
           </div>
-        </div>
-        <div className="responsiveImg">
-          <img id="dev" src="/14.png" alt="dev" />
-        </div>
-        
+        </div>        
       </div>
+    </>
+
   );
 };
 export default Hello;

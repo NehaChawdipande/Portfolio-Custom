@@ -2,17 +2,8 @@ import * as React from "react";
 import PopCard from "../organisms/PopCard/PopCard";
 import "./myJourney.css";
 const MyJourney = () => {
-  // const [offsetY, setOffsetY] = React.useState(0);
-  // const handleScroll = () => setOffsetY(window.pageYOffset);
-
   return (
-    // <div className="journey">
-    //   <div
-    //     className="background"
-    //     style={{
-    //       transform: `translateY(${offsetY * -0.5}px)`,
-    //     }}
-    //   />
+
     <><div>
       <h4 id="hi" className="highlight" style={{ color: "#C9A730", marginBottom: "12px"}}>
           Projects, Designs, Games and More..

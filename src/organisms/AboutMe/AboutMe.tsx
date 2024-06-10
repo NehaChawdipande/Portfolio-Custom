@@ -3,26 +3,58 @@ import React from "react";
 const AboutMe = (): JSX.Element => {
   return (
     <div className="page2" id="page2">
-      <div className="responsiveImg2">
-        <img id="dev" src="/12.png" alt="dev" />
-      </div>
       <div className="text2" >
-        <h1 id="hi" style={{ color: "#ececec" , marginBottom: "0"}} >
-          About me
-        </h1>
-        <h5 className="subtext" style={{ color: "#ececec" , marginBottom: "0"}}>
-         Custom Software Developer Analyst
-        </h5>
-        <h3 className="highlight" style={{ display: "inline" }}>
-          @Accenture Solutions Pvt. Ltd.
+        <h3 id="hi" style={{ color: "#343434" }} >
+          My Career so far
         </h3>
-        <br />
-       <h5 className="subtext" style={{ color: "#ececec", fontWeight: "100", fontSize:"14px"}}>
-        I'm a passionate software developer with <strong className="highlight"> over 2.5 years </strong> of experience building apps, components and features that work across different devices (web, mobile, and hybrid). With strong skills in <strong className="highlight">JavaScript</strong>  and have solid understanding of frameworks and libraries like <strong className="highlight"> React.js, Angular, and Vue.js; </strong> I have a strong personal brand known for  <strong className="highlight">  high quality </strong> and for creating smooth-running and user-friendly experiences along with writing clean code and making sure the app adapts to different screens.
-        </h5>
-        <h5 className="subtext" style={{ color: "#ececec", fontWeight: "100", fontSize:"14px"}}>
-        I love working with all kinds of teams and can explain technical stuff in a way everyone can understand. I'm also a problem solver and always on the lookout for new and cool things in web development.
-        </h5>
+        <h4 style={{ fontWeight: "lighter" }}>
+          So, I wouldn't call myself a coding whiz or anything, but I've been building custom software for the past 3 years. I'm pretty handy with JavaScript and those fancy frameworks like React and Angular.
+          <br />   <br />
+          Basically, I can cook up web apps, mobile apps, even a mix of both, all with a focus on making things run smooth and look sharp.Plus, I don't talk tech over people's heads – I can explain things in a way anyone can understand.
+          <br />    <br /> Teaming up with others is my jam, so if you need a developer who can code and collaborate, that's me.
+        </h4>
+      </div>
+      <div>
+        <img src="/peek.png" alt="peek" className="peek" />
+        <div style={{ display: "grid", gridAutoFlow: "column" }}>
+          <div className="skill">
+            {/* <img id="dev" src="/12.png" alt="dev" /> */}
+            <h4>React JS </h4>
+            <h4>
+              Angular JS
+            </h4>
+            <h4>
+              Vue JS
+            </h4>
+            <h4>
+              Spline
+            </h4><h4>
+              Webflow
+            </h4>
+            <h4>
+              SASS
+              <br />
+              CSS
+              <br />
+            </h4>
+          </div>
+          <div className="skill">
+            <h4>
+              Typescript
+            </h4>
+            <h4>
+              Unity Dev
+            </h4>
+            <h4>
+              Canva Design
+            </h4>
+            <h4>
+              JIRA<br /> SonarQube
+            </h4><h4>
+              Karma <br /> JEST <br /> RTL
+            </h4>
+          </div>
+        </div>
       </div>
     </div>
   );

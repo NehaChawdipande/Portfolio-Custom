@@ -10,17 +10,8 @@ const Home = () => {
       <br />
       <Hello />
       <AboutMe />
-       <Skills />
-       <Journey/>
-      <footer className="myFooter">
-        <a
-          href="https://www.storyset.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Illustrations by storyset
-        </a>
-      </footer>
+      {/* <Skills /> */}
+      {/* <Journey/> */}
     </>
   );
 };

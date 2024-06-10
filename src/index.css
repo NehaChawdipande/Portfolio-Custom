@@ -4,8 +4,8 @@ body {
   font-family: "Playfair Display", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(4,16,15);
-  color: ghostwhite;
+  background: white;
+  color: black;
   letter-spacing: 0.4px;
 }
 

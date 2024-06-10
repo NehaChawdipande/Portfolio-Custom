@@ -19,16 +19,31 @@ $gold: #ffbb1a;
 
 .App {
   text-align: center;
-  width: 100%;
-  height: 100vh;
+  // width: 100%;
+  // height: 100vh;padding
+  padding: 0 2rem;
+}
+.name {
+  max-width: 80vw;
+  text-align: left;
+  margin-left: 4rem;
+    margin-bottom: 2rem;
+  h2{
+    margin-bottom: 0;
+  }
 }
 .page1 {
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 50% 50%;
+  column-gap: 20px;
    padding-bottom: 2%;
-  width: 100vw;
-  background: rgb(4,16,15);
-  background: linear-gradient(172deg, rgba(4,16,15,1) 35%, rgba(11,38,36,1) 84%);
+   margin-top: 3rem;
+  width: 100%;
+  max-width: 90vw;
+  justify-content: center;
+  justify-items: center;
+  // background: rgb(4,16,15);
+  // background: linear-gradient(172deg, rgba(4,16,15,1) 35%, rgba(11,38,36,1) 84%);
 }
 .wrapper {
   display: block;
@@ -41,40 +56,53 @@ $gold: #ffbb1a;
 .page3 {
   padding-top: 0;
   display: grid;
+  margin-top: 2rem;
   grid-template-columns: 50% 50%;
   flex-direction: column-reverse;
-  background: rgb(4, 16, 15);
-  background: linear-gradient(172deg, rgb(4, 16, 15) 35%, rgb(11, 38, 36) 84%);
+  // background: rgb(4, 16, 15);
+  // background: linear-gradient(172deg, rgb(4, 16, 15) 35%, rgb(11, 38, 36) 84%);
   width: 100vw;
    padding-bottom: 2%;
 }
 .social {
   margin-left: 8px;
-  display: block;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
   font-style: italic;
   float: left;
 }
 .socialList {
   display: flex;
   width: -webkit-fill-available;
-  height: 25px;
-  margin-left: -8px;
+  height: fit-content;
   padding: 0;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+
+  button {
+    height: 3rem;
+    width: 3rem;
+  }
   button :hover {
-    scale: 1.25;
+    scale: 0.5;
+    transition: ease-out 0.5s;
     color: #186156;
   }
 }
+.socialButtons {
+  height: 3rem;
+  width: 3rem;
+  color: #186156;
+}
 .scaleOnHover :hover {
-  scale: 1.257;
+  // scale: 1.257;
   color: $secondaryBlueDark;
   transition: 0.5s ease-out;
 }
 .scaleOnHoverGold :hover {
-  scale: 1.25;
-  color: $gold-metallic;
+  // scale: 1.25;
+ color: green;
   transition: 0.5s ease-out;
 }
 // .socialList button:hover {
@@ -85,10 +113,12 @@ $gold: #ffbb1a;
 .page2 {
   display: grid;
   grid-template-columns: 50% 50%;
-  width: 100vw;
+  width: 100%;
+  max-width: 90vw;
    padding-bottom: 2%;
-  background: rgb(4,16,15);
-  background: linear-gradient(356deg, rgba(4,16,15,1) 35%, rgba(11,38,36,1) 84%);
+   margin-top:2rem;
+  // background: rgb(4,16,15);
+  // background: linear-gradient(356deg, rgba(4,16,15,1) 35%, rgba(11,38,36,1) 84%);
 }
 .formInputField {
   background-color: $white1;
@@ -98,7 +128,10 @@ $gold: #ffbb1a;
   height: 32px;
   padding: 12px;
 }
-
+.myform{
+  margin-top:2rem;
+  color:#09211F;
+}
 .myform input,
 textarea {
   font-family: "Playfair Display", serif;
@@ -106,12 +139,23 @@ textarea {
   font-size: medium;
   font-weight: 100;
   resize: none;
+  border: 1px solid lightgray;
   &:focus,
   &:focus-visible {
     outline: none;
-    border: solid 4px $lightGray;
+    border: solid 1px $dark-green;
   }
 }
+.intro{
+  @extend .subtext;
+  padding: .5rem 3rem;
+}
+.logotext{
+  text-decoration: underline;
+    align-self: center;
+    margin-bottom: 0;
+}
+
 // .myform input:focus,
 // input:focus-visible,
 // textarea:focus,
@@ -119,27 +163,43 @@ textarea {
 //   outline: none;
 //   border: solid 4px #40565f;
 // }
+.skill{
+  h4{
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin: 1.25rem 0;
+  }
+}
+.peek{ 
+  width:auto;
+  height:35vh;
+  max-height:40vh;
+}
 #nav {
   z-index: 2;
-  position: sticky;
+  // padding: 0 2rem;
+  display: grid;
+    grid-auto-flow: column;
+  position: relative;
   top: 0;
-  display: flex;
-  background: rgb(4, 16, 15);
+  background: white;
   width: 100%;
-  min-width: 100vw;
-  justify-content: space-between;
+  max-width: 99vw;
+  justify-content: normal;
   align-items: center;
+  color: black;
 }
 #navigation {
   display: flex;
   background-color: transparent;
-  color: white;
+  color: black;
   width: 100%;
   height: 56px;
   align-items: center;
   text-align: center;
-  justify-content: flex-end;
-  margin-right: 5%;
+  justify-content: center;
+  margin-bottom:0;
+  // margin-right: 5%;
   ul {
     text-decoration: none;
     font-family: "Playfair Display", serif;
@@ -147,6 +207,7 @@ textarea {
   li {
     display: inline;
     margin: 12px;
+    color: black;
   }
   button {
     font-family: "Playfair Display", serif;
@@ -172,7 +233,7 @@ textarea {
 .text {
   display: block;
   text-align: center;
-  padding-left: 10%;
+  // padding-left: 10%;
  
   justify-content: center;
   font-family: "Playfair Display", serif;
@@ -203,10 +264,10 @@ textarea {
   text-decoration: none;
 }
 .navLink {
-  color: $white1;
+  color: black;
   font-family: "Playfair Display", serif;
   text-decoration: none;
-  font-size: large;
+  font-size: medium;
   margin-right: 12px;
 }
 #background {
@@ -217,9 +278,10 @@ textarea {
 #dev {
   height: auto;
   width: 100%;
+  max-height: 80vh; max-width: 60vw;
 }
 .highlight {
-  color: $gold;
+  color: black;
   display: inline;
   font-size: large;
   font-family: "Playfair Display", serif;
@@ -229,27 +291,27 @@ textarea {
 .subtext {
   font-size: large;
   margin: 12px 0;
-  color: ghostwhite;
+  color: black;
   height: auto;
   font-weight: 100;
   letter-spacing: 0.4px;
-  width: -webkit-fill-available;
+  width:auto;
 }
 
 #hi {
   height: auto;
   width: -webkit-fill-available;
-  color:ghostwhite;
+  color:black;
   text-align: center;
   margin-top: -20px;
   /* margin-left: -40px; */
   z-index: 0;
   position: relative;
-  font-size: 4rem;
-  margin-bottom: 3rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 #knowMore {
-  margin: 12px;
+  margin: 0;
   font-family: "Playfair Display", serif;
   font-weight: 100;
   font-size: medium;
@@ -272,18 +334,18 @@ textarea {
   margin: 24px 8px;
   button {
     width: 80%;
-    transition: 0.5s ease-out;
+    transition: 0.4s ease-out;
     @extend .textButton;
-    background-color: #5c584b;
+    background-color: #09211F;
     &:hover {
-      scale: 1.2;
+      scale: 1;
       background-color: $gold-metallic;
     }
   }
 }
 .knowMoreButton{
   @extend .sendButton;
-  justify-content: left;
+  justify-content: center;
   margin: 16px 0;
 }
 
@@ -305,24 +367,28 @@ textarea {
 @media screen and (min-width: 320px) {
   .page1 {
     display: block;
+    margin-top: 0;
   }
   .responsiveImg {
     margin: 0;
+  margin-bottom: 30px;
+
   }
   .responsiveImg2 {
     // margin-top: 10%;
   }
   .text {
-    padding-left: 12px;
-    padding-right: 12px;
+    // padding-left: 12px;
+    // padding-right: 12px;
   }
   .text2 {
     padding-left: 8%;
     margin-right: 12px;
   }
   #navigation {
-    justify-content: flex-end;
-  margin-right: 5%;
+    justify-content: center;
+    display: none;
+  // margin-right: 5%;
   }
   #navigation button {
     font-size: medium;
@@ -340,10 +406,18 @@ textarea {
     font-size: 12px;
   }
   .myFooter{
-    background-color: black;
-    padding-bottom: 20px;
-    a {
-      color: #87887a;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    align-items: center;
+    border-top: solid 1px #d8d8d8;
+   div {
+      color: #8b8b8b;
+    }
+    a{
+      color: #8b8b8b;
+      text-decoration: none;
     }
   }
   #knowMore {
@@ -362,16 +436,20 @@ textarea {
   // }
   .page1 {
     display: grid;
+    align-content: center;
+    align-items: center;
+    
   }
   .responsiveImg {
-    margin: 20px;
+    margin: 0 0 20px 0;
     margin-top: 0;
   }
 
   .text {
-    padding-left: 10%;
-    padding-right: 12px;
+    // padding-left: 10%;
+    // padding-right: 8%;
     font-size: 14px;
+    max-width: 40vw;
   }
   .text2 {
     padding-left: 0;
@@ -379,8 +457,9 @@ textarea {
     font-size: 14px;
   }
   #navigation {
-    justify-content: flex-end;
-    margin-right: 5%;
+    justify-content:center;
+    display: flex;
+    // margin-right: 5%;
   }
   #navigation button {
     font-size: large;
@@ -399,7 +478,7 @@ textarea {
     display: grid;
   }
   .social {
-    margin-top: 12px;
+    // margin-top: 12px;
   }
 }
 @media screen and (min-width: 1024px) {

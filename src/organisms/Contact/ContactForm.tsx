@@ -8,7 +8,7 @@ const ContactForm = (): JSX.Element => {
           Your message has been sent!
           <br />
           Will get back to you{" "}
-          <strong style={{ color: "#C9A730" }}>A.S.A.P</strong>!
+          <strong style={{ color: "#09211F" }}>A.S.A.P</strong>!
         </h3>
     );
   }
@@ -16,30 +16,31 @@ const ContactForm = (): JSX.Element => {
 
       <form onSubmit={handleSubmit}>
         <div className="myform" style={{ display: "grid" }}>
-          <label
+          {/* <label
             htmlFor="email"
             className="subtext"
             style={{ color: "#ececec", margin: "8px 12px", fontWeight: "100" }}
           >
             Your email
-          </label>
+          </label> */}
           <input
             id="email"
             type="email"
             name="email"
             className="formInputField"
+            placeholder="Your Email"
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
 
           <br />
-          <label
+          {/* <label
             htmlFor="message"
             className="subtext"
             style={{ color: "#ececec", margin: "8px 12px", fontWeight: "100" }}
           >
             Your message
-          </label>
-          <textarea id="message" name="message" className="formInputField " />
+          </label> */}
+          <textarea id="message" name="message" className="formInputField " placeholder="Your message" />
           <ValidationError
             prefix="Message"
             field="message"
