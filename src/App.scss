@@ -281,7 +281,7 @@ textarea {
   max-height: 80vh; max-width: 60vw;
 }
 .highlight {
-  color: black;
+  color: #1c3c2a;
   display: inline;
   font-size: large;
   font-family: "Playfair Display", serif;
@@ -469,14 +469,15 @@ textarea {
   }
 }
 @media screen and (min-width: 768px) {
+
+  .name{
+    font-size: 1.5rem;
+  }
   .peek{
     height: 30vh;
   }
   .App {
     padding: 0 2rem;
-  }
-  .name{
-    font-size: 2rem;
   }
   #me {
     width: 40%;
@@ -509,6 +510,9 @@ textarea {
     margin-right: 0;
     font-size: 14px;
   }
+  #nav{
+    grid-auto-flow: column;
+  }
   #navigation {
     justify-content:center;
     display: flex;
@@ -536,6 +540,9 @@ textarea {
   .myFooter .footerName div{
       display: block;
 
+  }
+  #h1{
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -574,4 +581,8 @@ textarea {
     color: $dark-green;
     transition: 0.5s ease-out;
   }
+  #h1{
+    font-size: 2rem;
+  }
 }
+

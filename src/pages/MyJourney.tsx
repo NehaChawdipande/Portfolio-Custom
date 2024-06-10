@@ -4,60 +4,44 @@ import "./myJourney.css";
 const MyJourney = () => {
   return (
 
-    <><div>
-      <h4 id="hi" className="highlight" style={{ color: "#C9A730", marginBottom: "12px"}}>
-          Projects, Designs, Games and More..
-        </h4>
+    <><div style={{ marginTop: "2rem" }}>
+      <h4 id="hi" className="highlight" style={{ color: "#1c3c2a", marginBottom: "12px", marginTop: "1rem" }}>
+        Projects, Designs, Games and More..
+      </h4>
     </div>
       <div className="container">
         <PopCard
+          title="Spline Portfolio"
+          desc="A 3d portfolio built in Spline and Reactjs"
+          buttonName="View"
+          imgsrc="portfolio.png"
+          buttonRedirectUrl="https://whining-apple-short.on-fleek.app/"
+          width="90%"
+        />
+
+        <PopCard
+          title="Aroma Oils"
+          desc="A brandsite designed by me and made with webFlow"
+          buttonName="View"
+          imgsrc="aroma.png"
+          buttonRedirectUrl="https://illusionist-ca140d.webflow.io/"
+          width="90%"
+        />
+        <PopCard
           title="Little Lemon"
           desc="Restraunt reservation website developed as part of 'Meta Frontend Developer' Professional certification"
-          buttonName="Checkout"
+          buttonName="View"
           imgsrc="proj1.png"
           buttonRedirectUrl="https://github.com/NehaChawdipande/LittleLemon"
           width="90%"
         />
         <PopCard
-        title="NewsUp"
-        desc="Angular-Ionic News Application with newsApi, weatherApi.,"
-        buttonName="Checkout"
-        imgsrc="proj2.png"
-        buttonRedirectUrl="https://github.com/NehaChawdipande/NewsUp"
-      />
-        <PopCard
-        title="Floral GiftShop"
-        desc="A React-Redux project: Floral Affairs is gifting website for quality flowers and plants to its customers.,"
-        buttonName="Checkout"
-        imgsrc="proj3.png"
-        buttonRedirectUrl="https://github.com/NehaChawdipande/Floral_GiftShop"
-        width="90%"
-      />
-
-    <PopCard
-        title="Github User search"
-        desc="Simple React project to search and fetch github users using Github API."
-        buttonName="Checkout"
-        imgsrc="proj5.png"
-        buttonRedirectUrl="https://github.com/NehaChawdipande/GithubAPI"
-        width="90%"
-      />
-      <PopCard
-        title="Journey"
-        desc="An endless Journey into the Seas - developed with Unity and C#"
-        buttonName="Play online"
-        imgsrc="game1.png"
-        buttonRedirectUrl="https://neyha.itch.io/journey"
-        width="90%"
-      />
-       <PopCard
-        title="Chaos"
-        desc="A casual game with groovy music and killer cubes - developed with Unity and C#"
-        buttonName="Play online"
-        imgsrc="game2.png"
-        buttonRedirectUrl="https://neyha.itch.io/chaos"
-        width="90%"
-      />
+          title="NewsUp"
+          desc="Angular-Ionic News Application with newsApi, weatherApi.,"
+          buttonName="View"
+          imgsrc="proj2.png"
+          buttonRedirectUrl="https://github.com/NehaChawdipande/NewsUp"
+        />
         <PopCard
           title="My NFT Collection"
           desc="A small collection of authentic handmade illustration art by me."
@@ -65,17 +49,34 @@ const MyJourney = () => {
           imgsrc="nft1.png"
           buttonRedirectUrl="https://opensea.io/collection/untitled-collection-264563453/"
         />
-     <PopCard
+        <PopCard
           title="My Medium Blog"
           desc="Blog with interesting articles, authored by me."
           buttonName="Visit"
           imgsrc="blog.png"
-          width= "84%"
+          width="84%"
           buttonRedirectUrl="https://medium.com/@nehachawdipande10"
         />
-    
+
+        <PopCard
+          title="Journey"
+          desc="An endless Journey into the Seas - developed with Unity and C#"
+          buttonName="Play online"
+          imgsrc="game1.png"
+          buttonRedirectUrl="https://neyha.itch.io/journey"
+          width="90%"
+        />
+        <PopCard
+          title="Chaos"
+          desc="A casual game with groovy music and killer cubes - developed with Unity and C#"
+          buttonName="Play online"
+          imgsrc="game2.png"
+          buttonRedirectUrl="https://neyha.itch.io/chaos"
+          width="90%"
+        />
+
       </div>
-</>
+    </>
     // <div className="journey">
     //   <div
     //     className="background"
