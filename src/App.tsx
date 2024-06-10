@@ -52,9 +52,9 @@ function App() {
           <div> Neha Chawdipande</div>
         </div>
         <div style={{display: "flex", alignItems: "center", width: "40vw", maxWidth:"50vw", justifyContent:"space-around"}}>
-          <a href="">Linkedin</a>
-          <a href="">Github</a>
-          <a href="">Medium</a>
+          <a href="https://www.linkedin.com/in/neha-chawdipande/">Linkedin</a>
+          <a href="https://github.com/NehaChawdipande">Github</a>
+          <a href="https://medium.com/@nehachawdipande10">Medium</a>
         </div>
       </footer>
     </div>
