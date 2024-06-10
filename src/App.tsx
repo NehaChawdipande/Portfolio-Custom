@@ -47,11 +47,11 @@ function App() {
 
       <footer className="myFooter">
         
-        <div style={{display: "flex", alignItems: "center"}}>
+        <div  className="footerName">
         <img src="/logoLight.png" alt="logo" style={{width:"3rem", height:"3rem"}} />
           <div> Neha Chawdipande</div>
         </div>
-        <div style={{display: "flex", alignItems: "center", width: "40vw", maxWidth:"50vw", justifyContent:"space-around"}}>
+        <div  className="footerSocial">
           <a href="https://www.linkedin.com/in/neha-chawdipande/">Linkedin</a>
           <a href="https://github.com/NehaChawdipande">Github</a>
           <a href="https://medium.com/@nehachawdipande10">Medium</a>
