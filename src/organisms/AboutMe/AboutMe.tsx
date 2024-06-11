@@ -7,12 +7,17 @@ const AboutMe = (): JSX.Element => {
         <h3 id="hi" style={{ color: "#343434" }} >
           My Career so far
         </h3>
-        <h4 style={{ fontWeight: "lighter", fontSize:"1rem" }}>
+        <h4 style={{ fontWeight: "lighter", fontSize: "1rem" }}>
           So, I wouldn't call myself a coding whiz or anything, but I've been building custom software for the past 3 years. I'm pretty handy with JavaScript and those fancy frameworks like React and Angular.
           <br />   <br />
           Basically, I can cook up web apps, mobile apps, even a mix of both, all with a focus on making things run smooth and look sharp.Plus, I don't talk tech over people's heads – I can explain things in a way anyone can understand.
           <br />    <br /> Teaming up with others is my jam, so if you need a developer who can code and collaborate, that's me.
         </h4>
+        <div className="downloadResume">
+          <a href="https://www.dropbox.com/scl/fi/th3iclp239g1l3x3v3by3/Neha-Chawdipande-Resume-2024.pdf?rlkey=f44h2us5rxqjucpr8dfv3v9zh&st=rgmcxtla&dl=0" target="_blank" rel="noreferrer">
+            Download Resume here!
+          </a>
+        </div>
       </div>
       <div>
         <img src="/peek.png" alt="peek" className="peek" />

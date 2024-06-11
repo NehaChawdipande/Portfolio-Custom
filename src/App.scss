@@ -16,7 +16,19 @@ $gold-metallic: #C9A730;
 
 $gold: #ffbb1a;
 
-
+.downloadResume{
+  justify-self: center;
+  width: 80%;
+  height: auto;
+  padding: .75rem;
+  border-radius: 1.5rem;
+  background-color:#09211F;
+  color: white;
+  a {
+    color:white;
+    text-decoration: none;
+  }
+}
 .App {
   text-align: center;
   // width: 100%;
@@ -244,7 +256,10 @@ textarea {
 .text2 {
   @extend .text;
   // padding-left: 8%;
+  display: grid;
   align-self: center;
+  justify-content: center;
+  justify-items: center;
 }
 .responsiveImg {
   /* display: inline-block; */
