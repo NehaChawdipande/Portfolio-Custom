@@ -15,7 +15,7 @@ const AboutMe = (): JSX.Element => {
         </h4>
         <div className="downloadResume">
           <a href="https://www.dropbox.com/scl/fi/th3iclp239g1l3x3v3by3/Neha-Chawdipande-Resume-2024.pdf?rlkey=f44h2us5rxqjucpr8dfv3v9zh&st=rgmcxtla&dl=0" target="_blank" rel="noreferrer">
-            Download Resume here!
+            View Resume here!
           </a>
         </div>
       </div>

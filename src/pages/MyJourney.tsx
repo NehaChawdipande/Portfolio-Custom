@@ -15,7 +15,7 @@ const MyJourney = () => {
           desc="A 3d portfolio built in Spline and Reactjs"
           buttonName="View"
           imgsrc="portfolio.png"
-          buttonRedirectUrl="https://whining-apple-short.on-fleek.app/"
+          buttonRedirectUrl="https://spline-portfolio.on-fleek.app"
           width="90%"
         />
 
